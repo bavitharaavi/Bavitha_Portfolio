@@ -57,5 +57,5 @@ if (typeof ScrollReveal !== 'undefined') {
     sr.reveal('.home__data, .about__img',{ interval: 20});
     sr.reveal('.about__subtitle, .about__text, .about__stats',{ interval: 20});
     sr.reveal('.home__social-icon',{ interval: 20});
-    sr.reveal('.skills__card, .exp__item, .project__card, .education__item',{ interval: 100});
+    sr.reveal('.skills__card, .exp__item, .project__card, .certs__card, .education__item',{ interval: 100});
 }

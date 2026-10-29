@@ -767,6 +767,12 @@ img {
   gap: 0.5rem;
   margin-bottom: var(--mb-2);
 }
+.exp__header:last-child {
+  margin-bottom: 0;
+}
+.exp__header .work__position {
+  margin: 0 0 0.25rem;
+}
 .exp__company {
   font-size: 1.05rem;
   font-weight: var(--font-semi);
@@ -821,6 +827,9 @@ a.contact__data:hover {
 }
 
 @media screen and (max-width: 575px) {
+  .exp__header {
+    flex-direction: column;
+  }
   .exp__meta {
     text-align: left;
   }

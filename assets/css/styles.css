@@ -806,6 +806,56 @@ img {
   font-size: 1.1rem;
 }
 
+/* ===== CERTIFICATIONS =====*/
+.certs__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+.certs__card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  border-left: 4px solid var(--first-color);
+  color: var(--second-color);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.certs__card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 10px 30px rgba(14, 36, 49, 0.2);
+}
+.certs__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-semi);
+  color: var(--first-color);
+}
+.certs__icon {
+  font-size: 2.25rem;
+  color: var(--first-color);
+}
+.certs__title {
+  font-size: 1.05rem;
+  margin: 0.25rem 0;
+}
+.certs__issuer {
+  display: block;
+  font-weight: var(--font-semi);
+}
+.certs__date {
+  display: block;
+  font-size: var(--smaller-font-size);
+  color: var(--first-color);
+  font-weight: var(--font-semi);
+}
+
 /* ===== CONTACT =====*/
 .contact__info {
   display: flex;
@@ -836,6 +886,9 @@ a.contact__data:hover {
 }
 @media screen and (min-width: 768px) {
   .skills__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .certs__grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
